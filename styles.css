@@ -58,7 +58,7 @@ button {
 
 .num,
 .operator,
-.equals {
+#equals {
     width: 4rem;
     height: 4rem;
 }
@@ -67,7 +67,7 @@ button {
     width: 8.4rem;
 }
 
-.equals {
+#equals {
     background-color: orange;
 }
 
