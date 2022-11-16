@@ -51,7 +51,7 @@ function displayNumbers(number) {
 }
 
 function clearScreen() {
-    // should clear the display
+    display.textContent = '';
 }
 
 
