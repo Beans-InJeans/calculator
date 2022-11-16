@@ -37,6 +37,7 @@ button {
 }
 
 #display {
+    font-family: 'Orbitron', sans-serif;
     width: 16rem;
     height: 4rem;
     margin: auto;
