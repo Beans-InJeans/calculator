@@ -1,4 +1,4 @@
-const numberButtons = document.querySelector('.num');
+const numberButtons = document.querySelectorAll('.num');
 const operatorButtons = document.querySelectorAll('.operator');
 const equalsButton = document.getElementById('equals');
 const clearButton = document.getElementById('clear');
@@ -11,23 +11,23 @@ numberButtons.forEach((button) =>
     button.addEventListener('click', () => displayNumbers(button.textContent))      
 )
 
-const add = function(a, b) {
+function add(a, b) {
     return (a + b);
 }
 
-const subtract = function(a, b) {
+function subtract(a, b) {
     return (a - b);
 }
 
-const multiply = function(a, b) {
+function multiply(a, b) {
     return (a * b);
 }
 
-const divide = function(a, b) {
+function divide(a, b) {
     return (a / b);
 }
 
-const operate = function(operator, a, b) {
+function operate(operator, a, b) {
     switch(operator) {
         case "+":
             return add(a,b);
@@ -43,14 +43,14 @@ const operate = function(operator, a, b) {
     };
 }
 
-const displayNumbers = function(number) {
+function displayNumbers(number) {
     if (display.textContent === '0') {
         clearScreen();
     }
     display.textContent += number;
 }
 
-const clearScreen = function() {
+function clearScreen() {
     // should clear the display
 }
 
