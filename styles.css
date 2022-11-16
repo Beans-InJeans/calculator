@@ -36,8 +36,8 @@ button {
     cursor: pointer;
 }
 
-.display {
-    width: 17rem;
+#display {
+    width: 16rem;
     height: 4rem;
     margin: auto;
     display: flex;
@@ -45,14 +45,11 @@ button {
     background-color: black;
     margin-bottom: 0.5rem;
     color: lightgray;
-}
-
-.display-numbers {
     font-size: 3rem;
     padding: 0.5rem;
 }
 
-.clear {
+#clear {
     width: 17.2rem;
     height: 4rem;
     background-color: lightgray;
