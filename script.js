@@ -5,7 +5,7 @@ const clearButton = document.getElementById('clear');
 const display = document.getElementById('display');
 
 equalsButton.addEventListener('click', operate);
-clearButton.addEventListener('click', clearScreen);
+clearButton.addEventListener('click', clearDisplay);
 
 numberButtons.forEach((button) => 
     button.addEventListener('click', () => displayNumbers(button.textContent))      
@@ -45,12 +45,12 @@ function operate(operator, a, b) {
 
 function displayNumbers(number) {
     if (display.textContent === '0') {
-        clearScreen();
+        clearDisplay();
     }
     display.textContent += number;
 }
 
-function clearScreen() {
+function clearDisplay() {
     display.textContent = '';
 }
 
